@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,  sans-serif;
+}
+body {
+    line-height: 1.6;
+}
+.auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(228, 191, 220);
+}
+.auth-container {
+    background-color: rgb(85, 224, 207);
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 10px 20px 4px 10px rgb(233, 137, 217) ;
+    width: 100%;
+    max-width: 400px;
+    border-top: 5px solid #1e040a;
+    border-bottom: 5px solid #210209;
+}
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.auth-container label {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+.auth-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.auth-container input:focus {
+    border-color: black;
+    outline: none;
+}
+.btn {
+    background-color: rgb(217, 35, 159);
+    color: white;
+    padding: 12px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.btn:hover {
+    background-color: rgb(88, 223, 88);
+}
+.auth-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.auth-link a {
+    color: #051b12;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+
+.navbar {
+    background-color: rgb(15, 177, 72);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 2);
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #51ff00;
+}
+.hero {
+    background: linear-gradient(rgb(152, 226, 152), rgb(109, 164, 231), rgb(222, 149, 222), rgb(236, 198, 129));
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #333;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 5px;
+    background-color: #ff9800;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background-color: #b8ecc4;
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 5px solid #10974d;
+    border-bottom: 5px solid #10974d;
+    box-shadow: 5px 4px 15px rgba(0, 0, 0, 05);
+}
+.about-content img {
+    width: 45%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.about-text {
+    width: 55%;
+}
+.about-text p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 20px;
+}
+
+
+.video-section {
+    text-align: center;
+}
+.video-section iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+}
+.video-section ::after {
+    width: 270px;
+    height: 5px;
+}
+
+
+.product-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {background-color: #ffffff;
+width: 320px;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+overflow: hidden;
+transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-body {
+    padding: 25px;
+    text-align: center;
+}
+.card-body h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #333;
+}
+.card-body p {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 15px;
+}
+.card-body .btn {
+    padding: 8px 20px;
+    font-size: 14px;
+}
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.popup-overlay {}
+
+body {
+    line-height: 1.6;
+}
+.register-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    background-color: rgb(181, 26, 41);
+
+}
+.register-container {
+    background-color: rgb(61, 10, 12);
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 10px 20px 4px 10px rgb(119, 3, 75) ;
+    width: 100%;
+    max-width: 400px;
+    border-top: 5px solid #010104;
+    border-bottom: 5px solid #210209;
+}
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.register-container label {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+.register-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.register-container input:focus {
+    border-color: black;
+    outline: none;
+}
+.btn {
+    background-color: rgb(217, 35, 159);
+    color: white;
+    padding: 12px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.btn:hover {
+    background-color: rgb(14, 151, 14);
+}
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.register-link a {
+    color: #051b12;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+
+
